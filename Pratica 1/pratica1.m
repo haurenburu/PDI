@@ -27,6 +27,14 @@ for i=1:size(im, 1)
   end
 end
 
+#{
+R = im(:,:,1);
+G = im(:,:,2);
+B = im(:,:,3);
+
+im2 = R*0.3 + G*0.59 + B*0.11;
+#}
+
 figure(3);
 imshow(im2);
 
